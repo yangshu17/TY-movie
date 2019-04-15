@@ -1,0 +1,204 @@
+page{
+    background: #f4f4f4
+}
+.movie-item{
+    display: flex;
+    flex-direction: column
+}
+::-webkit-scrollbar{
+    display:none;
+}
+.item-bg{
+    position: relative;
+    width: 100%;
+    height: 346rpx;
+    /* opacity: .9; */
+    filter: blur(35rpx);
+    z-index: 100rpx;
+}
+.item-top{
+    position: absolute;
+    width: 100%;
+    height: 346rpx;
+    display: flex;
+    padding: 40rpx 60rpx 30rpx 30rpx;
+}
+.item-img{
+    width: 220rpx;
+    height: 300rpx;
+}
+.item-text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 25rpx;   
+}
+.item-name{
+    font-size: 40rpx;
+    margin-top: 4rpx;
+    font-weight: 700;
+    overflow: hidden;
+    line-height: 1;
+    color: #fff;
+}
+.item-info{
+    line-height: 1;
+    color: #fff;
+    margin-top: 20rpx;
+    font-size: 24rpx;
+    color: #fff;
+    opacity: .8;
+}
+.item-sc{
+    font-size: 36rpx;
+    font-weight: 700;
+    color: #fc0;
+    margin-top: 22rpx;
+}
+.item-bottom{
+    margin-top: 20rpx;
+    z-index: 200rpx;
+    background: #fff;
+    width: 100%;
+}
+.m-btn{
+    background: #e54847;
+    color: #fff;
+    border-radius: 12rpx;
+    width: 690rpx;
+    height: 72rpx;
+    margin: 20rpx auto;
+    margin-top: 40rpx;
+    text-align: center;
+    line-height: 72rpx;
+}
+.m-info{
+    width: 690rpx;
+    margin: 20rpx auto;
+    font-size: 30rpx;
+    font-family: PingFangSC-Medium;
+    color: #555
+}
+.line{
+    width: 100%;
+    height: 20rpx;
+    background: #f4f4f4;
+    border-bottom: 1rpx solid #eee;
+    border-top: 1rpx solid #eee;
+}
+.m-view{
+    display: flex;
+    flex-direction: column;
+}
+.v-title{
+    margin-top: 30rpx;
+    font-size: 34rpx;
+    font-family: PingFangSC-Medium;
+    color: #555;
+    margin-left: 30rpx;
+}
+.v-tip{
+    font-size: 30rpx;
+    width: 600rpx;
+    font-family: PingFangSC-Medium;
+    color: rgb(57, 101, 167);
+    margin-left: 30rpx;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis
+}
+.video{
+    width: 690rpx;
+    height: 400rpx;
+    margin: 0 auto;
+}
+.v-img{
+    width: 210rpx;
+    height: 160rpx;
+}
+.p-title{
+    font-size: 34rpx;
+    font-family: PingFangSC-Medium;
+    color: #555;
+    margin-left: 30rpx;
+    margin-top: 30rpx;
+}
+.v-photo{
+    width: 100%;
+    margin-top: 10rpx;
+    margin-left: 20rpx;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll
+}
+::-webkit-scrollbar{
+    display:none;
+}
+.v-img{
+    margin-left: 10rpx;
+}
+.talk-title{
+    background: #fff;
+    margin-left: 30rpx;
+}
+.t-tip{
+    position: relative;
+    font-size: 34rpx;
+    font-family: PingFangSC-Medium;
+    color: #555;
+    top: 20rpx;
+}
+.user-title{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30rpx;
+}
+.u-for{
+    display: flex;
+    flex-direction: row;
+    margin-top: 18rpx;
+}
+.user-header{
+    width: 68rpx;
+    height: 68rpx;
+    border-radius: 50%;
+}
+.u-info{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10rpx;
+}
+.u-name{
+    font-size: 24rpx;
+    color: #333;
+    font-style: normal;
+    vertical-align: inherit;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.u-sc{
+    font-size: 24rpx;
+    color: #999;
+    font-style: normal;
+    vertical-align: inherit;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.u-talk{
+    margin-top: 6rpx;
+    font-size: 28rpx;
+    width: 600rpx;
+    text-overflow: ellipsis
+}
+.date{
+    margin-top: 10rpx;
+    font-size: 24rpx;
+    color: #999;
+    font-style: normal;
+    vertical-align: inherit;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}

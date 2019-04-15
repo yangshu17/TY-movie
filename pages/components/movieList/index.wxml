@@ -1,0 +1,16 @@
+<view class="header" wx:for="{{movieList}}" data-index="{{index}}" bindtap="toItem" wx:key="index">
+    <view class="left">
+        <image wx:if="{{imgList}}" src="{{item.img}}" class="movieimg"/>
+    </view>
+    <view class="content">
+        <text class="title">{{item.nm}}</text>
+        <text wx:if="{{item.showst===3}}" class="info">观众评分<text class="mount">{{item.sc}}</text></text>
+        <text wx:if="{{item.showst===4}}" class="info"><text class="mount">{{item.wish}}</text>人想看</text>
+        <text class="info">主演：{{item.star}}</text>
+        <text class="info">{{item.showInfo}}</text>
+    </view>
+    <view class="right">
+        <button wx:if="{{item.showst===3}}" class="click">购票</button>
+        <button wx:if="{{item.showst===4}}" class="coming_click">预售</button>
+    </view>
+</view>

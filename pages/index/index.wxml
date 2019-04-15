@@ -1,0 +1,11 @@
+<view>
+  <view class="header">
+    <view class="city">北京<image src="../image/down.png" class="down"/></view>
+    <view class="movie_tab">
+      <text bindtap="hotbind" class="{{tabclick=== 1? 'hot_movie_click' : 'hot_movie'}}">正在热映</text>
+      <text bindtap="comingbind" class="{{tabclick=== 1? 'coming_movie' : 'coming_movie_click'}}">即将上映</text>
+    </view>
+    <image src="../image/search.png" class="search"/>
+  </view>
+  <movieList id="list"></movieList>
+</view>

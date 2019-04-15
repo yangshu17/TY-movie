@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/profile/index",
+    "pages/movieItem/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#e54847",
+    "navigationBarTitleText": "天眼movie",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#7f8389",
+    "selectedColor": "#e54847",
+    "borderStyle": "black",
+    "backgroundColor": "#f7f7fa",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "电影",
+        "iconPath": "pages/image/movie.png",
+        "selectedIconPath": "pages/image/movieclick.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "影院",
+        "iconPath": "pages/image/movieroom.png",
+        "selectedIconPath": "pages/image/movieroomclick.png"
+      },
+      {
+        "pagePath": "pages/profile/index",
+        "text": "我的",
+        "iconPath": "pages/image/profile.png",
+        "selectedIconPath": "pages/image/profileclick.png"
+      }
+    ]
+  }
+}

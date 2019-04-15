@@ -1,0 +1,48 @@
+<view class="movie-item">
+    <image src="{{detailMovie.img}}" class="item-bg" />
+    <view class="item-top">
+        <image src="{{detailMovie.img}}" class="item-img"/>
+        <view class="item-text">
+            <text class="item-name">{{detailMovie.nm}}</text>
+            <text class="item-info">{{detailMovie.enm}}</text>
+            <text class="item-info"><text class="item-sc">{{detailMovie.sc}}</text>({{detailMovie.snum}}万人评)</text>
+            <text class="item-info">{{detailMovie.cat}}</text>
+            <text class="item-info">{{detailMovie.src}}/{{detailMovie.dur}}分钟</text>
+            <text class="item-info">{{detailMovie.pubDesc}}</text>
+        </view>
+    </view>
+    <view class="item-bottom">
+        <view class="m-btn">特惠购票</view>
+        <view class="m-info">{{detailMovie.dra}}</view>
+        <view class="line"></view>
+        <view class="m-view">
+            <text class="v-title">预告片</text>
+            <text class="v-tip">{{detailMovie.videoName}}</text>
+            <video controls src="{{detailMovie.videourl}}" 
+            class="video"/>
+            <text class="p-title">剧照</text>
+            <view class="v-photo">
+                <view wx:for="{{detailMovie.photos}}" wx:key="{{index}}" data-index="{{index}}" bindtap="previewImg">
+                    <image wx:if="{{isShow}}" src="{{item}}" class="v-img" />
+                </view>
+            </view>
+        </view>
+        <view class="line"></view>
+        <view class="talk-title">
+            <text class="t-tip">讨论</text>
+            <view  class="user-title">
+                <view class="u-for" wx:if="{{Comments}}" wx:for="{{Comments}}" wx:key="index">
+                    <image src="{{item.avatarUrl}}" class="user-header"/>
+                    <view class="u-info">
+                        <text class="u-name">{{item.nick}}</text>
+                        <text class="u-sc">给这部作品打了{{item.score}}分</text>
+                        <view class="u-talk">{{item.content}}</view>
+                        <view class="foot">
+                            <text class="date">14分钟前</text>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

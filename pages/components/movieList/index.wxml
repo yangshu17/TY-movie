@@ -10,7 +10,7 @@
         <text class="info">{{item.showInfo}}</text>
     </view>
     <view class="right">
-        <button wx:if="{{item.showst===3}}" class="click">购票</button>
-        <button wx:if="{{item.showst===4}}" class="coming_click">预售</button>
+        <view wx:if="{{item.showst===3}}" class="click">购票</view>
+        <view wx:if="{{item.showst===4}}" class="coming_click">预售</view>
     </view>
 </view>

@@ -17,6 +17,11 @@ Page({
       tabclick: 2
     })
   },
+  toSearch() {
+    wx.navigateTo({
+      url: `/pages/search/index`
+    })
+  },
   onLoad: function () {
   },
   /**

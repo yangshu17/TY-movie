@@ -1,0 +1,99 @@
+/* pages/search/index.wxss */
+page{
+    background: #f5f5f5
+}
+.search-top{
+    display: flex;
+    align-items: center
+}
+.inputsearch-do{
+    /* position: absolute; */
+    width: 582rpx;
+    height: 60rpx;
+    margin-top: 17rpx;
+    margin-left: 20rpx;
+    border-radius: 100rpx;
+    margin-right: 28rpx;
+    border: 1px solid #ccc
+}
+.icon-search{
+    margin-top: 15rpx;
+    margin-left: 25rpx;
+    width: 33rpx;
+    height: 33rpx;
+    position: absolute;
+}
+.text{
+    left: 60rpx;
+    width: 400rpx;
+    top: 5rpx;
+    position: relative;
+    font-size: 26rpx;
+    margin-left: 14rpx;
+    color: #666;
+    z-index: 9999
+}
+.placeholder{
+    color: #BDBDBD;
+}
+.s-btn{
+    color: #e54847;
+    margin-top: 12rpx;
+}
+.search-content{
+    margin-top: 20rpx;
+    background: #fff;
+    border-top: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+}
+.s-movie{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 20rpx;
+    border-bottom: 1px solid #ddd
+}
+.m-img{
+    width: 168rpx;
+    height: 220rpx;
+    margin-left: 30rpx;
+    margin-top: 30rpx;
+}
+.m-mid{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20rpx;
+}
+.m-name{
+    width: 360rpx;
+    margin-top: 18rpx;
+    margin-bottom: 15rpx;
+    font-weight: bold;
+    font-size: 38rpx;
+    color: #222;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis
+}
+.m-info{
+    width: 360rpx;
+    margin-top: 10rpx;
+    font-size: 30rpx;
+    color: #555;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis
+}
+.count{
+    position: absolute;
+    right: 50rpx;
+    font-size: 42rpx;
+    color: #febf5f
+}
+.more{
+    height: 90rpx;
+    text-align: center;
+    line-height: 90rpx;
+    color: #ef4238
+}

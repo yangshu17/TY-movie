@@ -10,7 +10,8 @@ Page({
     Comments: '',
     isShow: false,
     offset: 0,
-    movieId: 0
+    movieId: 0,
+    photoList: null
   },
 
   /**
@@ -25,17 +26,17 @@ Page({
   },
   // 打开图片
   previewImg(event) {
-    for (var i = 0; i < this.data.detailMovie.photos.length; i++) {
-      this.data.detailMovie.photos[i] = this.data.detailMovie.photos[i].replace('210.160', '380.280')
+    for (var i = 0; i < this.data.photoList.photos.length; i++) {
+      this.data.photoList.photos[i] = this.data.photoList.photos[i].replace('/210.160/', '/')
       this.setData({
-        detailMovie: this.data.detailMovie,
+        photoList: this.data.photoList,
       })
     }
     var idx = event.currentTarget.dataset.index
-    let cut = this.data.detailMovie.photos[idx]
+    let cut = this.data.photoList.photos[idx]
     wx.previewImage({
       current: cut, // 当前显示图片的http链接
-      urls: this.data.detailMovie.photos // 需要预览的图片http链接列表
+      urls: this.data.photoList.photos // 需要预览的图片http链接列表
     })
   },
   getItem() {
@@ -49,11 +50,12 @@ Page({
         detailMovie: res.data.detailMovie
       })
       console.log(res.data.detailMovie)
-      this.data.detailMovie.img = this.data.detailMovie.img.replace('w.h', '128.180')
+      this.data.detailMovie.img = this.data.detailMovie.img.replace('w.h', '220.300')
       for (var i = 0; i < this.data.detailMovie.photos.length; i++) {
         this.data.detailMovie.photos[i] = this.data.detailMovie.photos[i].replace('w.h', '210.160')
         this.setData({
           detailMovie: this.data.detailMovie,
+          photoList: this.data.detailMovie,
         })
       }
       this.setData({

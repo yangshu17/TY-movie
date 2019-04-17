@@ -1,0 +1,30 @@
+<!-- logs.wxml -->
+<view class="container-data">
+  <view class="c-top">
+    <view class="t-date">{{list.queryDate}}</view>
+    <view class="t-today">今日实时 <text class="mount">{{list.totalBoxInfo}}{{list.totalBoxUnit}}</text></view>
+    <view class="t-now">{{list.updateInfo}}</view>
+  </view>
+  <view class="content">
+    <view class="c-title">
+      <view class="m-name">影片</view>
+      <text class="m-money m-width">综合票房</text>
+      <text class="m-money">票房占比</text>
+      <text class="m-money">排片场次</text>
+      <!-- <text class="m-money">场均人次</text> -->
+      <text class="m-money">上座率</text>
+    </view>
+    <view class="m-con">
+      <view wx:for="{{list.list}}" class="c-title {{index%2==0? 'c-bck' : ''}}" wx:key="index">
+        <view class="name">{{index+1}}:<text class="movie-name">{{item.movieName}}
+        {{item.releaseInfo}} {{item.sumBoxInfo}}
+        </text></view>
+        <text class="m-money m-width"><text class="z-mount">{{item.boxInfo}}万</text></text>
+        <text class="m-money">{{item.boxRate}}</text>
+        <text class="m-money">{{item.showInfo}}</text>
+        <!-- <text class="m-money">{{item.avgShowView}}</text> -->
+        <text class="m-money">{{item.avgSeatView}}</text>
+      </view>
+    </view>
+  </view>
+</view>

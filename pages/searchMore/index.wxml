@@ -1,0 +1,10 @@
+<view wx:if="{{isShow}}" class="s-movie" wx:for="{{movieList}}" wx:key="index" data-index="{{index}}" bindtap="toItem">
+    <image src="{{item.img}}" class="m-img" />
+    <view class="m-mid">
+        <text class="m-name">{{item.nm}}</text>
+        <text class="m-info">{{item.enm}}</text>
+        <text class="m-info">{{item.cat}}</text>
+        <text class="m-info">{{item.rt}}</text>
+    </view>
+    <view class="count">{{item.sc}}分</view>
+</view>

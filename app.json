@@ -1,9 +1,11 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs",
+    "pages/moviedata/index",
     "pages/profile/index",
-    "pages/movieItem/index"
+    "pages/movieItem/index",
+    "pages/search/index",
+    "pages/searchMore/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -24,8 +26,8 @@
         "selectedIconPath": "pages/image/movieclick.png"
       },
       {
-        "pagePath": "pages/logs/logs",
-        "text": "影院",
+        "pagePath": "pages/moviedata/index",
+        "text": "票房",
         "iconPath": "pages/image/movieroom.png",
         "selectedIconPath": "pages/image/movieroomclick.png"
       },

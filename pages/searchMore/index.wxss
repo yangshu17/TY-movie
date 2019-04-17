@@ -1,0 +1,45 @@
+/* pages/searchMore/index.wxss */
+.s-movie{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 20rpx;
+    border-bottom: 1px solid #ddd
+}
+.m-img{
+    width: 168rpx;
+    height: 220rpx;
+    margin-left: 30rpx;
+    margin-top: 30rpx;
+}
+.m-mid{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20rpx;
+}
+.m-name{
+    width: 360rpx;
+    margin-top: 18rpx;
+    margin-bottom: 15rpx;
+    font-weight: bold;
+    font-size: 38rpx;
+    color: #222;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis
+}
+.m-info{
+    width: 360rpx;
+    margin-top: 10rpx;
+    font-size: 30rpx;
+    color: #555;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis
+}
+.count{
+    position: absolute;
+    right: 50rpx;
+    font-size: 42rpx;
+    color: #febf5f
+}

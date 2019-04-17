@@ -28,7 +28,6 @@ Component({
   methods: {
     // 进入详情页
     toItem(evt) {
-      console.log(evt.currentTarget.dataset.index)
       let idx = evt.currentTarget.dataset.index
       let mid = this.data.movieList[idx].id
       wx.navigateTo({
@@ -37,7 +36,6 @@ Component({
     },
     // 上拉加载
     onReachBottom() {
-      console.log(1212)
       let start = this.data.start
       let end = this.data.end
       let id = this.data.movieIds.slice(start, end).toString()
@@ -49,7 +47,6 @@ Component({
             movieIds: id
           }
         }).then((res) => {
-          console.log(res.data.coming)
           this.setData({
             movieList: [...this.data.movieList, ...res.data.coming],
             start: this.data.start + 12,
@@ -61,9 +58,9 @@ Component({
               movieList: this.data.movieList,
             })
           }
-          this.setData({
-            imgList: true
-          })
+          // this.setData({
+          //   imgList: true
+          // })
         }).catch((err) => {
           console.log(err)
         })

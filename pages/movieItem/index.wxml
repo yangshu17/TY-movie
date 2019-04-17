@@ -1,4 +1,5 @@
 <view class="movie-item">
+    <wxs module="formatData" src="../../filter/formatData.wxs"></wxs>
     <image src="{{detailMovie.img}}" class="item-bg" />
     <view class="item-top">
         <image src="{{detailMovie.img}}" class="item-img"/>
@@ -38,7 +39,7 @@
                         <text class="u-sc">给这部作品打了{{item.score}}分</text>
                         <view class="u-talk">{{item.content}}</view>
                         <view class="foot">
-                            <text class="date">14分钟前</text>
+                            <text class="date">{{formatData.between(item.time, "MM-dd")}}</text>
                         </view>
                     </view>
                 </view>

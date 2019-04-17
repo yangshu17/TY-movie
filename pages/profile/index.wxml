@@ -1,3 +1,13 @@
-<view >
-我的
+<view class="profile">
+    <view class="top">
+        <!-- <image wx:if="{{isLogin}}" src="{{userInfo.avatarUrl}}" class="user-img" />
+        <text wx:if="{{isLogin}}" class="user-name">{{userInfo.nickName}}</text>
+        <button open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" class="login">
+            点击登陆
+        </button> -->
+        <view class="user-img">
+            <open-data type="userAvatarUrl" ></open-data>
+        </view>
+        <open-data type="userNickName" class="user-name"></open-data>
+    </view>
 </view>

@@ -1,0 +1,25 @@
+<!-- pages/search/index.wxml -->
+<view class="search-main">
+    <view class="search-top">
+        <view class="inputsearch-do">
+            <image src="./imgs/icon-search.png" class="icon-search" placeholder-style="placeholder" />
+            <input class="text" placeholder="请输入想看的电影" focus="{{inputfocus}}" bindinput="tosearch" bindconfirm="search" />
+        </view>
+        <view class="s-btn" bindtap="tosearch">搜索</view>
+    </view>
+    <view class="search-content">
+        <view class="s-movie" wx:for="{{movieList.list}}" wx:key="index" data-index="{{index}}" bindtap="toItem">
+            <image wx:if="{{isShow}}" src="{{item.img}}" class="m-img" />
+            <view class="m-mid">
+                <text class="m-name">{{item.nm}}</text>
+                <text class="m-info">{{item.enm}}</text>
+                <text class="m-info">{{item.cat}}</text>
+                <text class="m-info">{{item.rt}}</text>
+            </view>
+            <view class="count">{{item.sc}}分</view>
+        </view>
+        <view wx:if="{{movieList.total}}" class="more" bindtap="toMore">
+            查看全部{{movieList.total}}部影视剧
+        </view>
+    </view>
+</view>
